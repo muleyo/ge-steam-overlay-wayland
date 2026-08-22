@@ -1,7 +1,7 @@
 {
     "file_format_version": "1.0.0",
     "layer": {
-        "name": "/usr/lib/steam-overlay-wayland/VK_LAYER_GE_wayland_steam_overlay",
+        "name": "/usr/lib/steam-overlay-wayland/VK_LAYER_GE_wayland_steam_overlay.so",
         "type": "GLOBAL",
         "library_path": "libVkLayer_GE_Wayland_SteamOverlay.so",
         "api_version": "1.3.0",
