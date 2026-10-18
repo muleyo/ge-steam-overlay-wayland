@@ -629,7 +629,11 @@ void ge_overlay_wayland_set_cursor_position(int32_t x, int32_t y)
     {
         int sw = swapchain_width, sh = swapchain_height;
 
-        if (focused_pointer->on_catcher && sw > 0 && sh > 0)
+        /* Steam's pixels -> surface-local units, for the catcher and for
+         * the game surface alike (the visual cursor lives on the latter
+         * while the game holds a pointer lock). */
+        if (focused_pointer->catcher_width > 0 &&
+            focused_pointer->catcher_height > 0 && sw > 0 && sh > 0)
         {
             x = (int32_t)((int64_t)x * focused_pointer->catcher_width / sw);
             y = (int32_t)((int64_t)y * focused_pointer->catcher_height / sh);
@@ -990,6 +994,13 @@ static void relative_pointer_motion(
 
     frame.dx = wl_fixed_to_double(dx);
     frame.dy = wl_fixed_to_double(dy);
+    /* Deltas are in compositor units; Steam hit-tests in swapchain pixels. */
+    if (swapchain_width > 0 && swapchain_height > 0 &&
+        surface->catcher_width > 0 && surface->catcher_height > 0)
+    {
+        frame.dx = frame.dx * swapchain_width / surface->catcher_width;
+        frame.dy = frame.dy * swapchain_height / surface->catcher_height;
+    }
     frame.flags = GE_STEAM_OVERLAY_FRAME_RELATIVE;
     ge_overlay_bridge_filter_pointer_frame(&frame);
 }

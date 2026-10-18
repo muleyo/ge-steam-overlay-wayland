@@ -412,6 +412,7 @@ static int update_overlay_active(void)
         overlay_trace("overlay is now %s\n", active ? "active" : "inactive");
         if (active) bridge_set_cursor_shape(GE_STEAM_OVERLAY_CURSOR_DEFAULT);
         ge_overlay_wayland_set_overlay_active(active);
+        ge_overlay_game_input_gate(active);
     }
 
     return active;
@@ -1025,6 +1026,7 @@ static void destroy_overlay_bridge(void)
     pthread_mutex_unlock(&overlay_mutex);
 
     ge_overlay_wayland_set_overlay_active(0);
+    ge_overlay_game_input_gate(0);
     ge_overlay_wayland_set_cursor_shape(GE_STEAM_OVERLAY_CURSOR_DEFAULT);
     overlay_trace("destroyed X11 input proxy\n");
 }

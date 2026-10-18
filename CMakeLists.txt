@@ -95,6 +95,7 @@ get_filename_component(STEAM_OVERLAY_LIBRARY "${STEAM_OVERLAY_LIBRARY}" REALPATH
 add_library(VkLayer_GE_Wayland_SteamOverlay_Front SHARED
     ${PROTOCOL_SOURCES}
     src/focus_proxy.c
+    src/game_input_gate.c
     src/steam_overlay_bridge.c
     src/vulkan_layer.cpp
     src/wayland_input.c

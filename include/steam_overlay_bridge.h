@@ -64,6 +64,8 @@ void ge_overlay_wayland_surface_dispatch(struct ge_overlay_wayland_surface *surf
 void ge_overlay_wayland_set_cursor_shape(uint32_t shape);
 void ge_overlay_wayland_set_cursor_position(int32_t x, int32_t y);
 void ge_overlay_wayland_set_overlay_active(int active);
+/* Drops the game's SDL keyboard/mouse events while the overlay owns input. */
+void ge_overlay_game_input_gate(int block);
 void ge_overlay_wayland_set_swapchain_extent(int32_t width, int32_t height);
 
 void ge_overlay_bridge_surface_created(void);
