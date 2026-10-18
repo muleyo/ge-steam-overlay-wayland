@@ -1,0 +1,23 @@
+# ninja log v7
+1	5	1792268409396877532	protocols/relative-pointer-unstable-v1-client-protocol.h	67a61e46a0085ee2
+1	5	1792268409396877532	/home/leif/src/ge-steam-overlay-wayland/build/protocols/relative-pointer-unstable-v1-client-protocol.h	67a61e46a0085ee2
+1	5	1792268409396877532	protocols/relative-pointer-unstable-v1-protocol.c	50c9989636be4f75
+1	5	1792268409396877532	/home/leif/src/ge-steam-overlay-wayland/build/protocols/relative-pointer-unstable-v1-protocol.c	50c9989636be4f75
+5	34	1792268409397534980	CMakeFiles/VkLayer_GE_Wayland_SteamOverlay_Front.dir/protocols/relative-pointer-unstable-v1-protocol.c.o	e1be0d3c973efcf9
+4	102	1792277812563717202	CMakeFiles/VkLayer_GE_Wayland_SteamOverlay_Front.dir/src/focus_proxy.c.o	c8bb36a420924caa
+1	110	1792268409393240337	CMakeFiles/VkLayer_GE_Wayland_SteamOverlay_Back.dir/src/vulkan_translate_layer.c.o	2e0ee3b9fc466236
+110	119	1792268409501879974	libVkLayer_GE_Wayland_SteamOverlay_Back.so	daa6225f2ff266f3
+4	181	1792277812563789755	CMakeFiles/VkLayer_GE_Wayland_SteamOverlay_Front.dir/src/steam_overlay_bridge.c.o	2d35287a4bc711bf
+0	224	1792277819132908354	CMakeFiles/VkLayer_GE_Wayland_SteamOverlay_Front.dir/src/wayland_input.c.o	57a626b8e64e7529
+5	1778	1792277812563988543	CMakeFiles/VkLayer_GE_Wayland_SteamOverlay_Front.dir/src/vulkan_layer.cpp.o	b3ec1a6581feaf05
+224	249	1792277819356914331	libVkLayer_GE_Wayland_SteamOverlay_Front.so	79e49de465be81aa
+1	4	1792277812563397579	protocols/viewporter-protocol.c	5ed57b1a66065c17
+1	4	1792277812563397579	/home/leif/src/ge-steam-overlay-wayland/build/protocols/viewporter-protocol.c	5ed57b1a66065c17
+1	4	1792277812563397579	protocols/xdg-output-unstable-v1-client-protocol.h	293090ed912fc77c
+1	4	1792277812563397579	/home/leif/src/ge-steam-overlay-wayland/build/protocols/xdg-output-unstable-v1-client-protocol.h	293090ed912fc77c
+1	4	1792277812563397579	protocols/viewporter-client-protocol.h	ecb3cd1a4a61977
+1	4	1792277812563397579	/home/leif/src/ge-steam-overlay-wayland/build/protocols/viewporter-client-protocol.h	ecb3cd1a4a61977
+1	4	1792277812563397579	protocols/xdg-output-unstable-v1-protocol.c	4a5beaf953a950b1
+1	4	1792277812563397579	/home/leif/src/ge-steam-overlay-wayland/build/protocols/xdg-output-unstable-v1-protocol.c	4a5beaf953a950b1
+4	43	1792277812563561046	CMakeFiles/VkLayer_GE_Wayland_SteamOverlay_Front.dir/protocols/viewporter-protocol.c.o	159828ca4487d805
+4	43	1792277812563651459	CMakeFiles/VkLayer_GE_Wayland_SteamOverlay_Front.dir/protocols/xdg-output-unstable-v1-protocol.c.o	54c995c0880af7e7

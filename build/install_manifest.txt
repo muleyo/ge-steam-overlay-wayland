@@ -1,0 +1,6 @@
+/usr/local/lib/steam-overlay-wayland/libVkLayer_GE_Wayland_SteamOverlay_Front.so
+/usr/local/lib/steam-overlay-wayland/libVkLayer_GE_Wayland_SteamOverlay_Back.so
+/usr/local/share/vulkan/implicit_layer.d/VkLayer_GE_wayland_steam_overlay_64.json
+/usr/local/share/vulkan/explicit_layer.d/VkLayer_GE_wayland_steam_overlay_front_64.json
+/usr/local/share/vulkan/explicit_layer.d/VkLayer_GE_wayland_steam_overlay_back_64.json
+/usr/local/share/vulkan/explicit_layer.d/VkLayer_GE_steam_overlay_component_64.json
