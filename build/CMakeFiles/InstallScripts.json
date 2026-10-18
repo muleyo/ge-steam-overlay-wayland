@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/leif/src/ge-steam-overlay-wayland/build/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
